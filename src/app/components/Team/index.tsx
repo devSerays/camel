@@ -34,16 +34,16 @@ const Team = () => {
   return (
     <div className="my-5">
       <h1 className="text-txt_brown text-4xl font-bold">Meet the Team</h1>
-      <p className="text-[#6B3200] font-bold">
+      <p className="text-dark_brown font-bold">
         The team behind Camel Coin consists of passionate developers,
         experienced traders, and visionary leaders, all working together to
         bring you a decentralized future powered by the Blockchain Desert's
         finest currency.
       </p>
       <div className="flex flex-wrap justify-center gap-16 w-2/3 mx-auto">
-        {images.map((img) => {
+        {images.map((img, index) => {
           return (
-            <div className="text-center">
+            <div key={index + 1} className="text-center">
               <Image
                 alt="me"
                 width={200}
@@ -51,10 +51,10 @@ const Team = () => {
                 src={`/Team/${img.url}.png`}
                 className="object-contain object-center"
               />
-              <h1 className="text-[#341800] font-bold text-xl mt-1">
+              <h1 className="text-brown_34 font-bold text-xl mt-1">
                 {img.label}
               </h1>
-              <h3 className="text-[#6B3200] text-xs font-bold ">{img.role}</h3>
+              <h3 className="text-dark_brown text-xs font-bold ">{img.role}</h3>
             </div>
           );
         })}

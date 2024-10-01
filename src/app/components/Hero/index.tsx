@@ -1,9 +1,10 @@
 import Image from "next/image";
 import React from "react";
+import Container from "../Container";
 
 const Hero = () => {
   return (
-    <section className=" bg-main_gray rounded-xl h-screen ">
+    <Container className=" bg-main_gray rounded-xl h-screen ">
       <div className="  flex gap-5 px-10 py-10   flex-col ">
         <div className="text-txt_brown">
           <h1 className="title-font  text-3xl mb-2 font-extrabold">
@@ -53,7 +54,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </section>
+    </Container>
   );
 };
 
