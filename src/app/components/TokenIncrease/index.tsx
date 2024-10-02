@@ -18,13 +18,13 @@ export const TokenIncrease = () => {
         <h1 className="text-txt_brown text-4xl font-bold mt-12 ">
           Token Price Increase In:
         </h1>
-        <div className="grid grid-cols-1 lg:grid-cols-2 mt-8">
-          <div className="">
-            <div className="flex space-x-4">
+        <div className="grid grid-cols-1 lg:grid-cols-2 mt-8 gap-12">
+          <div className="grid">
+            <div className="flex gap-5 ">
               {/* Days */}
               <div className="text-center">
-                <div className="bg-[#CF5F1D] border-[3px] border-clock_border text-4xl font-bold w-24 h-24 flex items-center justify-center rounded-2xl">
-                  <span className="bg-white p-4 rounded-2xl text-brown_34">
+                <div className="bg-[#CF5F1D] border-[3px] border-clock_border text-4xl font-bold w-28 h-28 flex items-center justify-center rounded-2xl">
+                  <span className="bg-white p-5 rounded-xl text-brown_34">
                     08
                   </span>
                 </div>
@@ -34,8 +34,8 @@ export const TokenIncrease = () => {
               </div>
               {/* Hours */}
               <div className="text-center">
-                <div className="bg-[#CF5F1D] border-[3px] border-clock_border text-4xl font-bold w-24 h-24 flex items-center justify-center rounded-2xl">
-                  <span className="bg-white p-4 rounded-2xl text-brown_34">
+                <div className="bg-[#CF5F1D] border-[3px] border-clock_border text-4xl font-bold w-28 h-28 flex items-center justify-center rounded-2xl">
+                  <span className="bg-white p-5 rounded-xl text-brown_34">
                     40
                   </span>
                 </div>
@@ -45,8 +45,8 @@ export const TokenIncrease = () => {
               </div>
               {/* Minutes */}
               <div className="text-center">
-                <div className="bg-[#CF5F1D] border-[3px] border-clock_border text-4xl font-bold w-24 h-24 flex items-center justify-center rounded-2xl">
-                  <span className="bg-white p-4 rounded-2xl text-brown_34">
+                <div className="bg-[#CF5F1D] border-[3px] border-clock_border text-4xl font-bold w-28 h-28 flex items-center justify-center rounded-2xl">
+                  <span className="bg-white p-5 rounded-xl text-brown_34">
                     05
                   </span>
                 </div>
@@ -56,8 +56,8 @@ export const TokenIncrease = () => {
               </div>
               {/* Seconds */}
               <div className="text-center">
-                <div className="bg-[#CF5F1D] border-[3px] border-clock_border text-4xl font-bold w-24 h-24 flex items-center justify-center rounded-2xl">
-                  <span className="bg-white p-4 rounded-2xl text-brown_34">
+                <div className="bg-[#CF5F1D] border-[3px] border-clock_border text-4xl font-bold w-28 h-28 flex items-center justify-center rounded-2xl">
+                  <span className="bg-white p-5 rounded-xl text-brown_34">
                     11
                   </span>
                 </div>
@@ -66,11 +66,20 @@ export const TokenIncrease = () => {
                 </p>
               </div>
             </div>
-            <div className="flex gap-5 my-10">
-              <div className="block mb-1 text-lg w-28 font-bold text-brown_34">
-                USD raised: $0 / $
+            <div className="flex gap-5 my-9">
+              <div className="flex">
+                <Image
+                  width={25}
+                  height={25}
+                  className="w-6 h-6 object-contain"
+                  alt="camel-coins"
+                  src="/icons/money.svg"
+                />
+                <div className="block mb-1 text-xl w-32 font-bold text-brown_34">
+                  USD raised: $0 / $
+                </div>
               </div>
-              <div className="bg-white w-72 h-6 rounded-full">
+              <div className="bg-white w-80 h-6 rounded-full">
                 <div className="bg-dark_brown w-32 rounded-full  text-white text-end pr-10 text-xs py-1">
                   34%
                 </div>
@@ -79,7 +88,7 @@ export const TokenIncrease = () => {
             <Image
               width={400}
               height={400}
-              className="w-96 mt-auto"
+              className="w-[500px] mt-auto "
               alt="camel-coins"
               src="/Vectors/camel-coins.png"
             />

@@ -7,8 +7,10 @@ interface ContainerProps {
 
 const Container: React.FC<ContainerProps> = ({ children, className }) => {
   return (
-    <div className={`lg:w-[1440px] mx-auto ${className ?? ""}`}>
-      {children}
+    <div className="flex justify-center w-full">
+      <div className={`lg:max-w-[1440px] w-[90%]   ${className ?? ""}`}>
+        {children}
+      </div>
     </div>
   );
 };
