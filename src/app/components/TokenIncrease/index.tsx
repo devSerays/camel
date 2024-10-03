@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import Container from "../Container";
 import Image from "next/image";
+import toast from "react-hot-toast";
 
 export const TokenIncrease = () => {
   const [address, setAddress] = useState(
@@ -9,7 +10,14 @@ export const TokenIncrease = () => {
   );
   const handleCopy = () => {
     navigator.clipboard.writeText(address);
-    alert("Copied to clipboard!");
+
+    toast.success("Copied to clipboard!", {
+      duration: 4000,
+      style: {
+        background: "#e9a449",
+        color: "#fff",
+      },
+    });
   };
 
   return (
@@ -80,7 +88,7 @@ export const TokenIncrease = () => {
                 </div>
               </div>
               <div className="bg-white w-80 h-6 rounded-full">
-                <div className="bg-dark_brown w-32 rounded-full  text-white text-end pr-10 text-xs py-1">
+                <div className="bg-[#6B3200] w-36 h-6 rounded-full  text-white text-end pr-10 text-xs py-1">
                   34%
                 </div>
               </div>
@@ -250,7 +258,7 @@ export const TokenIncrease = () => {
             <div className="text-[#6F3400] my-3 font-bold text-xl">
               ...or send desired amount of crypto to this address:
             </div>
-            <div className="flex items-center bg-[#BB6410]/30 text-white rounded-xl px-2 w-full max-w-md">
+            <div className="flex items-center bg-[#BB6410]/30 text-white rounded-xl px-2 w-full max-w-lg">
               {/* Address Input */}
               <input
                 type="text"

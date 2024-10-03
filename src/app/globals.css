@@ -19,7 +19,6 @@
 
 body {
   background: var(--background);
-  font-family: "HoboStd";
 }
 
 @layer utilities {
@@ -27,10 +26,24 @@ body {
     text-wrap: balance;
   }
 }
-@layer base {
-  @font-face {
-    font-family: "HoboStd";
-    font-weight: 400;
-    src: url("/app/fonts/HoboStd.otf") format("otf");
-  }
+::-webkit-scrollbar {
+  width: 12px;
+  height: 15px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #caaf15;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-track {
+  background: #ad6110;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
 }

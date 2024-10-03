@@ -5,15 +5,17 @@ import Team from "./components/Team";
 import FutureListing from "./components/FutureListing";
 import { TokenIncrease } from "./components/TokenIncrease";
 import { Tokenomics } from "./components/Tokenomics";
+import HowToBuy from "./components/HowToBuy";
 
 export default function Home() {
   return (
     <>
       <Hero />
-      <FutureListing />
       <TokenIncrease />
       <Tokenomics />
+      <FutureListing />
       <Roadmap />
+      <HowToBuy />
       <Team />
     </>
   );

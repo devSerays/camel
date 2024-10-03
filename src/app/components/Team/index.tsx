@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import React from "react";
+import Container from "../Container";
 
 const Team = () => {
   const images = [
@@ -32,9 +33,9 @@ const Team = () => {
     },
   ];
   return (
-    <div className="my-5">
+    <Container className="my-5">
       <h1 className="text-txt_brown text-4xl font-bold">Meet the Team</h1>
-      <p className="text-dark_brown font-bold">
+      <p className="text-dark_brown font-bold text-[#6B3200]">
         The team behind Camel Coin consists of passionate developers,
         experienced traders, and visionary leaders, all working together to
         bring you a decentralized future powered by the Blockchain Desert's
@@ -59,7 +60,7 @@ const Team = () => {
           );
         })}
       </div>
-    </div>
+    </Container>
   );
 };
 
