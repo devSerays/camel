@@ -6,6 +6,11 @@
   --background: #fbae56;
 }
 
+@font-face {
+  font-family: HoboStd;
+  src: url("/app/fonts/HoboStd.otf") format("opentype");
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #fbae56;
@@ -14,11 +19,18 @@
 
 body {
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "HoboStd";
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+@layer base {
+  @font-face {
+    font-family: "HoboStd";
+    font-weight: 400;
+    src: url("/app/fonts/HoboStd.otf") format("otf");
   }
 }

@@ -15,13 +15,7 @@ const Hero = () => {
             legendary Camel Coins.
           </p>
         </div>
-        <Image
-          alt="me"
-          width={270}
-          height={270}
-          src="/Vectors/tree.png"
-          className="object-cover object-center absolute right-3 top-[84px]"
-        />
+
         <div className="flex gap-2">
           <div className="flex shadow-orange_shadow">
             <button className="inline-flex text-white bg-main_orange rounded-r-none  py-2 px-2 focus:outline-none hover:bg-indigo-600 rounded-lg text-lg border-2 border-background">

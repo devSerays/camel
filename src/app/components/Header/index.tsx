@@ -4,9 +4,12 @@ import React from "react";
 
 const Header = () => {
   return (
-    <header className="text-white body-font my-3">
+    <header className="text-white body-font my-3 mx-7 ">
       <div className="grid grid-cols-3 justify-center items-center">
-        <Link href="/" className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+        <Link
+          href="/"
+          className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
+        >
           <Image
             src="/Logos/header_logo.png"
             alt="header_logo"
