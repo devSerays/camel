@@ -5,12 +5,12 @@ import { TokenBox } from "./TokenBox";
 
 export const Tokenomics = () => {
   return (
-    <div className="bg-[url('/Vectors/Tokenomics.png')] bg-contain bg-no-repeat w-100 min-h-[250vh]  h-full relative flex justify-center">
+    <div className="bg-[url('/Vectors/Tokenomics.png')] bg-contain bg-no-repeat w-100   h-full relative flex justify-center">
       <Container>
         <h1 className="text-txt_brown text-2xl lg:text-5xl font-bold mt-16 w-full">
           Tokenomics
         </h1>
-        <div className="bg-[url('/Vectors/wood-sign.png')] bg-contain bg-no-repeat lg:w-[60vw] mt-12 h-80 mx-auto relative flex items-center justify-center">
+        <div className="bg-[url('/Vectors/wood-sign.png')] bg-contain bg-no-repeat lg:w-[60vw] mt-5 lg:mt-12 h-56 lg:h-80 mx-auto relative flex items-center justify-center">
           <div className="hidden">Total Supply: 1,000,000,000 Camel Coins</div>
         </div>
         <div className="flex flex-wrap gap-5 justify-center">
@@ -20,7 +20,7 @@ export const Tokenomics = () => {
               width={50}
               height={50}
               src={`/Vectors/stone_2.svg`}
-              className="object-cover object-center w-[130px] absolute -left-10 -bottom-2"
+              className="object-cover object-center w-16 lg:w-[130px] absolute -left-5 lg:-left-10 -bottom-2"
             />
           </TokenBox>
           <TokenBox percent="20%" title="Community Rewards" />
@@ -30,7 +30,7 @@ export const Tokenomics = () => {
               width={50}
               height={50}
               src={`/Vectors/stone.svg`}
-              className="object-cover object-center w-[100px] absolute -right-10 -bottom-2"
+              className="object-cover object-center lg:w-[100px] absolute lg:-right-10 -right-5 -bottom-2"
             />
           </TokenBox>
           <TokenBox percent="10%" title="Community Rewards" />
@@ -40,12 +40,21 @@ export const Tokenomics = () => {
               width={50}
               height={50}
               src={`/Vectors/vector.svg`}
-              className="object-cover object-center w-[80px] absolute -right-10 -bottom-2"
+              className="object-cover object-center lg:w-[80px] absolute lg:-right-10 -right-5 -bottom-2"
             />
           </TokenBox>
         </div>
-        <section className="relative top-[95vh]">
-          <h1 className="text-txt_brown text-4xl font-bold ">
+        <p className="text-[#6B3200] mt-10">
+          Camel Coin tokenomics is carefully designed to ensure long-term
+          growth, stability, and sustainability within the ecosystem. By
+          strategically allocating tokens across key sectors, Camel Coin aims to
+          fuel innovation, incentivize community participation, and create a
+          robust decentralized economy. Each allocation is tailored to meet the
+          evolving needs of the ecosystem, fostering liquidity, development, and
+          long-term value for holders.
+        </p>
+        <section className="relative my-10">
+          <h1 className="text-txt_brown text-2xl lg:text-4xl font-bold ">
             Who is Crypto Camel?
           </h1>
           <p className="text-[#6B3200] font-bold mt-5">
@@ -73,7 +82,7 @@ export const Tokenomics = () => {
           width={120}
           height={50}
           src={`/Vectors/arrow.svg`}
-          className="object-cover object-center w-[20vw]  absolute right-0 -bottom-20"
+          className="object-cover object-center w-[20vw]  absolute right-0 -bottom-20 animate-pulse"
         />
       </Container>
     </div>

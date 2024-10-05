@@ -14,6 +14,7 @@ const config: Config = {
         main_border: "#627D2B",
         main_orange: "#E63E21",
         txt_brown: "#542122",
+        brown_34:"#341800"
       },
       boxShadow: {
         orange_shadow: "0 0 30px -10px #e63e21",
