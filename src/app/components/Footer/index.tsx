@@ -4,7 +4,7 @@ import React from "react";
 export const Footer = () => {
   return (
     <div className="bg-brown_34 h-full">
-      <div className="bg-[url('/Vectors/footer.png')] bg-contain bg-no-repeat w-100 pb-24 relative flex justify-center">
+      <div className="bg-[url('/Vectors/footer.png')] bg-contain lg:bg-cover bg-no-repeat w-100 pb-24 relative flex justify-center">
         <div className="mt-40 lg:mt-[470px] text-center">
           <h1 className="text-white text-2xl lg:text-5xl font-bold">
             Follow Us on Social Media

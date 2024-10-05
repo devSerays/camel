@@ -12,32 +12,32 @@ const FutureListing = () => {
         <p className="text-[#6B3200] font-bold">
           Ready to become part of the Camel Coin adventure?
         </p>
-        <div className="flex flex-wrap justify-center lg:justify-between  gap-16 mt-10 mx-auto">
+        <div className="grid grid-cols-2 lg:grid-cols-4 justify-center lg:justify-between gap-3 lg:gap-5 mt-5 lg:mt-10 mx-auto">
           <Image
             width={270}
             height={250}
-            className="  "
+            className="max-md:w-full"
             alt="plus"
             src="/Vectors/BYB.svg"
           />
           <Image
             width={270}
             height={250}
-            className="  "
+            className="max-md:w-full"
             alt="plus"
             src="/Vectors/Gate.io.svg"
           />
           <Image
             width={270}
             height={250}
-            className="  "
+            className="max-md:w-full"
             alt="plus"
             src="/Vectors/kucoin.svg"
           />
           <Image
             width={270}
             height={250}
-            className="  "
+            className="max-md:w-full"
             alt="plus"
             src="/Vectors/MEXC.svg"
           />

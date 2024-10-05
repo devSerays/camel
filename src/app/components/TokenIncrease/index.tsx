@@ -83,7 +83,7 @@ export const TokenIncrease = () => {
                   alt="camel-coins"
                   src="/icons/money.svg"
                 />
-                <div className="block text-[#6B3200] mb-1 text-xl w-32 font-bold text-brown_34">
+                <div className="block mb-1 text-xl w-32 font-bold text-brown_34">
                   USD raised: $0 / $
                 </div>
               </div>
@@ -252,13 +252,13 @@ export const TokenIncrease = () => {
             <div className="text-[#6F3400] my-3 font-bold md:text-xl">
               Buy $CAMEL tokens now:
             </div>
-            <button className="  gap-x-1 p-3 text-center  md:text-xl font-bold rounded-lg border-2 border-main_border  bg-btn_green text-white w-1/2 ">
+            <button className="  gap-x-1 p-3 text-center  md:text-xl font-bold rounded-lg border-2 border-main_border  bg-btn_green text-white  w-full ">
               Buy Now
             </button>
             <div className="text-[#6F3400] my-3 font-bold md:text-xl">
               ...or send desired amount of crypto to this address:
             </div>
-            <div className="flex items-center bg-[#BB6410]/30 text-white rounded-xl px-2 w-full max-w-lg">
+            <div className="flex items-center bg-[#BB6410]/30 text-white rounded-xl px-2 w-full ">
               {/* Address Input */}
               <input
                 type="text"

@@ -4,14 +4,15 @@ import React from "react";
 
 const Header = () => {
   return (
-    <header className="text-white body-font pt-2 mx-5 ">
+    <header className="text-white body-font pt-4 mx-5 ">
       <div className="flex justify-between items-center">
         <Link href="/">
           <Image
             src="/Logos/header_logo.png"
             alt="header_logo"
             width={150}
-            height={150}
+            height={50}
+            className="w-32 h-12"
           />
         </Link>
         <nav className="md:ml-auto hidden lg:flex flex-wrap items-center text-base justify-center font-bold">

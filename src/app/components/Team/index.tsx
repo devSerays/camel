@@ -35,7 +35,7 @@ const Team = () => {
   return (
     <Container className="my-5">
       <h1 className="text-txt_brown text-2xl lg:text-4xl font-bold">Meet the Team</h1>
-      <p className="text-dark_brown font-bold text-[#6B3200] text-sm max-sm:mb-10">
+      <p className="text-dark_brown font-bold text-[#6B3200] text-sm lg:text-base max-sm:mb-10">
         The team behind Camel Coin consists of passionate developers,
         experienced traders, and visionary leaders, all working together to
         bring you a decentralized future powered by the Blockchain Desert's
