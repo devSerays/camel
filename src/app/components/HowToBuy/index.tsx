@@ -2,6 +2,7 @@ import React from "react";
 import Container from "../Container";
 import Image from "next/image";
 import { ToBuyBox } from "./ToBuyBox";
+import { ZoomAnimation } from "../ZoomAnimation";
 
 const HowToBuy = () => {
   return (
@@ -114,41 +115,51 @@ const HowToBuy = () => {
         </div>
 
         <div className="hidden lg:flex flex-wrap justify-center mt-10 gap-10">
-          <Image
-            alt="me"
-            width={500}
-            height={500}
-            src="/Vectors/1.svg"
-            className="object-contain object-center md:w-[20vw]"
-          />
-          <Image
-            alt="me"
-            width={500}
-            height={500}
-            src="/Vectors/2.svg"
-            className="object-contain object-center md:w-[20vw]"
-          />
-          <Image
-            alt="me"
-            width={500}
-            height={500}
-            src="/Vectors/3.svg"
-            className="object-contain object-center md:w-[20vw]"
-          />
-          <Image
-            alt="me"
-            width={500}
-            height={500}
-            src="/Vectors/4.svg"
-            className="object-contain object-center md:w-[20vw]"
-          />
-          <Image
-            alt="me"
-            width={500}
-            height={500}
-            src="/Vectors/5.svg"
-            className="object-contain object-center md:w-[20vw]"
-          />
+          <ZoomAnimation>
+            <Image
+              alt="me"
+              width={500}
+              height={500}
+              src="/Vectors/1.svg"
+              className="object-contain object-center md:w-[20vw]"
+            />
+          </ZoomAnimation>
+          <ZoomAnimation>
+            <Image
+              alt="me"
+              width={500}
+              height={500}
+              src="/Vectors/2.svg"
+              className="object-contain object-center md:w-[20vw]"
+            />
+          </ZoomAnimation>
+          <ZoomAnimation>
+            <Image
+              alt="me"
+              width={500}
+              height={500}
+              src="/Vectors/3.svg"
+              className="object-contain object-center md:w-[20vw]"
+            />
+          </ZoomAnimation>
+          <ZoomAnimation>
+            <Image
+              alt="me"
+              width={500}
+              height={500}
+              src="/Vectors/4.svg"
+              className="object-contain object-center md:w-[20vw]"
+            />
+          </ZoomAnimation>
+          <ZoomAnimation>
+            <Image
+              alt="me"
+              width={500}
+              height={500}
+              src="/Vectors/5.svg"
+              className="object-contain object-center md:w-[20vw]"
+            />
+          </ZoomAnimation>
         </div>
       </Container>
     </div>

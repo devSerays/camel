@@ -2,71 +2,38 @@
 import React, { useState } from "react";
 import Container from "../Container";
 import Image from "next/image";
+import toast from "react-hot-toast";
+import { ZoomAnimation } from "../ZoomAnimation";
+import Countdown from "./Countdown";
 
 export const TokenIncrease = () => {
-  const [address, setAddress] = useState(
-    "0xd0657EB6E73768738cF7982bE7564d53d6092f4c"
-  );
+  const [address] = useState("0xd0657EB6E73768738cF7982bE7564d53d6092f4c");
+
   const handleCopy = () => {
     navigator.clipboard.writeText(address);
-    alert("Copied to clipboard!");
+
+    toast.success("Copied to clipboard!", {
+      duration: 4000,
+      style: {
+        background: "#e9a449",
+        color: "#fff",
+      },
+    });
   };
 
   return (
-    <div className="bg-[url('/Vectors/desert.png')] bg-cover bg-no-repeat w-100 min-h-screen h-full relative flex justify-center">
+    <div
+      id="token-price"
+      className="bg-[url('/Vectors/desert.png')] bg-cover bg-no-repeat w-100 pb-10 min-h-screen h-full relative flex justify-center"
+    >
       <Container>
-        <h1 className="text-txt_brown text-4xl font-bold mt-12 ">
+        <h1 className="text-txt_brown text-2xl lg:text-4xl font-bold mt-12 ">
           Token Price Increase In:
         </h1>
         <div className="grid grid-cols-1 lg:grid-cols-2 mt-8 gap-12">
-          <div className="grid">
-            <div className="flex gap-5 ">
-              {/* Days */}
-              <div className="text-center">
-                <div className="bg-[#CF5F1D] border-[3px] border-clock_border text-4xl font-bold w-28 h-28 flex items-center justify-center rounded-2xl">
-                  <span className="bg-white p-5 rounded-xl text-brown_34">
-                    08
-                  </span>
-                </div>
-                <p className="text-xl font-semibold mt-2 text-dark_brown">
-                  Days
-                </p>
-              </div>
-              {/* Hours */}
-              <div className="text-center">
-                <div className="bg-[#CF5F1D] border-[3px] border-clock_border text-4xl font-bold w-28 h-28 flex items-center justify-center rounded-2xl">
-                  <span className="bg-white p-5 rounded-xl text-brown_34">
-                    40
-                  </span>
-                </div>
-                <p className="text-xl font-semibold mt-2 text-dark_brown">
-                  Hours
-                </p>
-              </div>
-              {/* Minutes */}
-              <div className="text-center">
-                <div className="bg-[#CF5F1D] border-[3px] border-clock_border text-4xl font-bold w-28 h-28 flex items-center justify-center rounded-2xl">
-                  <span className="bg-white p-5 rounded-xl text-brown_34">
-                    05
-                  </span>
-                </div>
-                <p className="text-xl font-semibold mt-2 text-dark_brown">
-                  Minutes
-                </p>
-              </div>
-              {/* Seconds */}
-              <div className="text-center">
-                <div className="bg-[#CF5F1D] border-[3px] border-clock_border text-4xl font-bold w-28 h-28 flex items-center justify-center rounded-2xl">
-                  <span className="bg-white p-5 rounded-xl text-brown_34">
-                    11
-                  </span>
-                </div>
-                <p className="text-xl font-semibold mt-2 text-dark_brown">
-                  Seconds
-                </p>
-              </div>
-            </div>
-            <div className="flex gap-5 my-9">
+          <div className="flex flex-col-reverse lg:flex-col">
+            <Countdown />
+            <div className="flex gap-5 my-9 justify-center">
               <div className="flex">
                 <Image
                   width={25}
@@ -79,8 +46,8 @@ export const TokenIncrease = () => {
                   USD raised: $0 / $
                 </div>
               </div>
-              <div className="bg-white w-80 h-6 rounded-full">
-                <div className="bg-dark_brown w-32 rounded-full  text-white text-end pr-10 text-xs py-1">
+              <div className="bg-white w-56 md:w-80 h-6 rounded-full">
+                <div className="bg-[#6B3200] w-28 md:w-36 h-6 rounded-full  text-white text-end pr-10 text-xs py-1">
                   34%
                 </div>
               </div>
@@ -88,7 +55,7 @@ export const TokenIncrease = () => {
             <Image
               width={400}
               height={400}
-              className="w-[500px] mt-auto "
+              className="w-[250px] md:w-[500px] mx-auto mt-auto "
               alt="camel-coins"
               src="/Vectors/camel-coins.png"
             />
@@ -98,14 +65,15 @@ export const TokenIncrease = () => {
               <div>
                 <label
                   htmlFor="zip-input"
-                  className="block mb-1 text-lg font-bold text-brown_34"
+                  className="block mb-1  text-sm md:text-lg font-bold text-brown_34"
                 >
                   Selet currency to spend:
                 </label>
                 <div className="relative  ">
                   <select
                     value="1"
-                    className="appearance-none text-brown_34 w-full text-xl font-bold px-4 py-5 pl-14 bg-[#FBDBA4] border-[3px] border-[#964512] rounded-xl shadow-sm outline-none cursor-pointer"
+                    onChange={() => console.log("USDT")}
+                    className="appearance-none text-brown_34 w-full text-xl font-bold px-4 py-3 md:py-5 pl-14 bg-[#FBDBA4] border-[3px] border-[#964512] rounded-xl shadow-sm outline-none cursor-pointer"
                   >
                     <option value="1">USDT </option>
                   </select>
@@ -137,14 +105,15 @@ export const TokenIncrease = () => {
               <div>
                 <label
                   htmlFor="zip-input"
-                  className="block mb-1 text-lg font-bold text-brown_34"
+                  className="block mb-1  text-sm md:text-lg font-bold text-brown_34"
                 >
                   Selet payment method:
                 </label>
                 <div className="relative  ">
                   <select
                     value="1"
-                    className="appearance-none text-brown_34 w-full text-xl font-bold px-4 py-5 pl-14 bg-[#FBDBA4] border-[3px] border-[#964512] rounded-xl shadow-sm outline-none cursor-pointer"
+                    onChange={() => console.log("ETH")}
+                    className="appearance-none text-brown_34 w-full text-xl font-bold px-4 py-3 md:py-5 pl-14 bg-[#FBDBA4] border-[3px] border-[#964512] rounded-xl shadow-sm outline-none cursor-pointer"
                   >
                     <option value="1">ETH</option>
                   </select>
@@ -179,7 +148,7 @@ export const TokenIncrease = () => {
               <div>
                 <label
                   htmlFor="zip-input"
-                  className="block mb-1 text-lg font-bold text-brown_34"
+                  className="block mb-1  text-sm md:text-lg font-bold text-brown_34"
                 >
                   USDT you pay:
                 </label>
@@ -197,7 +166,7 @@ export const TokenIncrease = () => {
                     type="text"
                     id="zip-input"
                     aria-describedby="helper-text-explanation"
-                    className="bg-white text-gray-400 outline-none text-xl rounded-xl  block w-full ps-16 py-5"
+                    className="bg-white text-gray-400 outline-none text-xl rounded-xl  block w-full ps-16 py-3 md:py-5"
                     placeholder="0"
                     pattern="^\d{5}(-\d{4})?$"
                     required
@@ -211,7 +180,7 @@ export const TokenIncrease = () => {
               <div>
                 <label
                   htmlFor="zip-input"
-                  className="block mb-1 text-lg font-bold text-brown_34"
+                  className="block mb-1  text-sm md:text-lg font-bold text-brown_34"
                 >
                   $CAMEL you get:
                 </label>
@@ -229,7 +198,7 @@ export const TokenIncrease = () => {
                     type="text"
                     id="zip-input"
                     aria-describedby="helper-text-explanation"
-                    className="bg-white text-gray-400 outline-none text-xl rounded-xl  block w-full ps-16 py-5"
+                    className="bg-white text-gray-400 outline-none text-xl rounded-xl  block w-full ps-16 py-3 md:py-5"
                     placeholder="0"
                     pattern="^\d{5}(-\d{4})?$"
                     required
@@ -241,20 +210,20 @@ export const TokenIncrease = () => {
                 </div>
               </div>
             </div>
-            <div className="text-[#6F3400] my-3 font-bold text-xl">
+            <div className="text-[#6F3400] my-3 font-bold md:text-xl">
               Buy $CAMEL tokens now:
             </div>
-            <button className="  gap-x-1 p-3 text-center  text-xl font-bold rounded-lg border-2 border-main_border  bg-btn_green text-white w-1/2 ">
+            <button className="  gap-x-1 p-3 text-center  md:text-xl font-bold rounded-lg border-2 border-main_border  bg-btn_green text-white  w-full ">
               Buy Now
             </button>
-            <div className="text-[#6F3400] my-3 font-bold text-xl">
+            <div className="text-[#6F3400] my-3 font-bold md:text-xl">
               ...or send desired amount of crypto to this address:
             </div>
-            <div className="flex items-center bg-[#BB6410]/30 text-white rounded-xl px-2 w-full max-w-md">
+            <div className="flex items-center bg-[#BB6410]/30 text-white rounded-xl px-2 w-full ">
               {/* Address Input */}
               <input
                 type="text"
-                value={address}
+                defaultValue={address}
                 className="bg-transparent text-brown_34 px-4 py-2 w-full outline-none truncate"
               />
               {/* Copy Button */}
@@ -280,10 +249,10 @@ export const TokenIncrease = () => {
                 </svg>
               </button>
             </div>
-            <div className="text-[#6F3400] my-3 underline underline-offset-2 font-bold text-xl">
+            <div className="text-[#6F3400] my-3 underline underline-offset-2 font-bold text-sm md:text-xl">
               Not enough crypto? Buy with card now!
             </div>
-            <p className="text-[#444444]">
+            <p className="text-[#444444] text-sm">
               I have done my own research and understand that investing in
               cryptocurrency involves risk and may result in loss of investment.
               By participating in the presale, I fully agree to the terms of the
