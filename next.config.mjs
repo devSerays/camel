@@ -12,6 +12,11 @@ const nextConfig = {
         },
       },
     });
+    config.resolve.fallback = {
+      encoding: false, // Ignoring 'encoding' package
+      "pino-pretty": false,
+      fs: false,
+    };
     return config;
   },
 };
