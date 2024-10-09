@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React from "react";
 import Container from "../Container";
 import Header from "../Header";
@@ -8,9 +7,9 @@ const Hero = () => {
     <div className="bg-[url('/Vectors/hero-sm.svg')] md:bg-[url('/Vectors/hero.svg')] h-[550px] md:h-[750px] bg-bottom bg-cover lg:bg-cover bg-no-repeat w-100 relative lg:h-[140vh] bg-[#FDB93C]">
       <Header />
       <Container className=" bg-main_gray rounded-xl  ">
-        <div className="  flex gap-5 lg:px-5 pb-10 pt-5  flex-col ">
+        <div className="  flex gap-5 lg:px-10 py-10   flex-col ">
           <div className="text-txt_brown">
-            <h1 className="title-font text-xl lg:text-5xl mb-1 font-extrabold">
+            <h1 className="title-font text-xl lg:text-5xl mb-2 font-extrabold">
               Welcome to <span className="text-[#23672D]">Crypto Camel</span>:
               <br /> The Desert’s Digital Gold
             </h1>

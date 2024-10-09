@@ -49,8 +49,3 @@ body {
 ::-webkit-scrollbar-corner {
   background: transparent;
 }
-.active__drawer {
-  background-color: #c78e49;
-  color: white;
-  border-radius: 10px;
-}

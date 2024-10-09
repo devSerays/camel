@@ -9,8 +9,8 @@ const Roadmap = () => {
         Roadmap
       </h1>
       <p className="text-dark_brown font-bold text-[#6B3200]">
-        Our journey with Camel Coins is just beginning. Here's a look at what's
-        coming next:
+        Our journey with Camel Coins is just beginning. Here&apos;s a look at
+        what&apos;s coming next:
       </p>
       <Image
         alt="me"

@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import Container from "../Container";
 import Image from "next/image";
 import toast from "react-hot-toast";
-import { ZoomAnimation } from "../ZoomAnimation";
 import Countdown from "./Countdown";
 
 export const TokenIncrease = () => {

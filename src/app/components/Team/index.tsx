@@ -41,7 +41,7 @@ const Team = () => {
       <p className="text-dark_brown font-bold text-[#6B3200] text-sm lg:text-base max-sm:mb-10">
         The team behind Camel Coin consists of passionate developers,
         experienced traders, and visionary leaders, all working together to
-        bring you a decentralized future powered by the Blockchain Desert's
+        bring you a decentralized future powered by the Blockchain Desert&apos;s
         finest currency.
       </p>
       <div className="flex md:selection:mt-5 flex-wrap justify-center gap-5 lg:gap-16 lg:w-2/3 mx-auto">
