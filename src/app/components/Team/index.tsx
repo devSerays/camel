@@ -47,8 +47,8 @@ const Team = () => {
       <div className="flex md:selection:mt-5 flex-wrap justify-center gap-5 lg:gap-16 lg:w-2/3 mx-auto">
         {images.map((img, index) => {
           return (
-            <ZoomAnimation>
-              <div key={index + 1} className="text-center">
+            <ZoomAnimation key={index + 1}>
+              <div className="text-center">
                 <Image
                   alt="me"
                   width={200}
